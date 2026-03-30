@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SystemAdmin>
+    <menus>
+        <menu code="gjx_invoice_plugin_root" sort="90" name="乐迪专属配置" desc="宝龙战士专属配置" icon="icon-mail-set"
+              target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="gjx_filez_integration" sort="30" name="文档中台设置" desc="联想Filez配置" icon="icon-document" target="mainfrm" plugin="" url="/filezConfig/index.do" />
+            </submenus>
+        </menu>
+        <menu code="" sort="1" name="system.menuname.BasicConfig" desc="系统设置" icon="icon-jichushezhi" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="system_system_open" sort="1" name="system.menuname.SystemParameters" desc="系统参数设置" icon="icon-parameter-set" target="mainfrm" plugin="" url="/systemopen.do?method=showSystemOpenSpace&amp;userType=system" />
+                <menu code="system_partition_manage" sort="2" name="system.menuname.SystemPartition" desc="系统分区管理" icon="icon-zone-management" target="mainfrm" plugin="" url="/partition.do?method=partitionFrame&amp;from=Post" />
+                <menu code="system_basic_setting" sort="3" name="system.menuname.basic.setting" desc="系统模块管理" icon="icon-module-management" target="mainfrm" plugin="" url="/portal/portalController.do?method=sysMenuBaiscSetting" />
+                <menu code="system_mailSet" sort="4" name="system.menuname.SystemEmail" desc="系统邮箱设置" icon="icon-mail-set" target="mainfrm" plugin="webmail" url="/systemMail.do?method=systemMailboxSetting" />
+                <menu code="system_i18n_resource" sort="6" name="system.menuname.i18nresource" desc="国际化资源管理" icon="icon-internationalization-resources" target="mainfrm" plugin="" url="/i18NResource.do" />
+                <menu code="system_office_config" sort="7" name="system.menuname.office.config" desc="流版签系统配置"
+                      icon="icon-RESTport" target="mainfrm"
+                      plugin="officeOnlineEdit,officeOnlineSign,officeOnlinePreview,domestic"
+                      url="/officeConfig.do?method=config"/>
+            </submenus>
+        </menu>
+
+        <menu code="" sort="2" name="system.menuname.SystemMaintenance" desc="系统维护" icon="icon-xitongweihu" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="system_performance_config" sort="1" name="system.menuname.performance" desc="性能优化设置" icon="icon-pingtaigailan" target="mainfrm" plugin="" url="/performance.do?method=index" />
+                <menu code="system_server_state" sort="2" name="system.menuname.ShutdownNotice" desc="服务停止通知" icon="icon-fuwutingzhitongzhi" target="mainfrm" plugin="" url="/serverState.do?method=index" />
+                <menu code="locked_user_management" sort="4" name="system.menuname.LockedUserManagement" desc="锁定用户管理" icon="icon-suodingyonghuguanli" target="mainfrm" plugin="" url="/lockedUserManager.do?method=initHome" />
+                <menu code="" sort="5" name="system.menuname.SystemDebugConfig" desc="系统调试设置" icon="icon-xitongtiaoshishezhi" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="log4j_config" sort="2" name="Log4J Setting" desc="Log4J设置" icon="" target="mainfrm" plugin="" url="/ctp/sysmgr/monitor/log.do?method=showOperationPage" />
+                    </submenus>
+                </menu>
+                <menu code="system_monitor" sort="6" name="system.menuname.seeyonsystem" desc="系统监控" icon="icon-hangweijiankong" target="mainfrm" plugin="" url="/ctp/sysmgr/monitor/index.do" />
+                <menu code="form_trigger_list" sort="7" name="system.menuname.form.triggerlist" desc="表单待触发列表" icon="icon-biaodanyingyongshezhi" target="mainfrm" plugin="" url="/form/formData.do?method=showTriggerEventList" />
+<!--                <menu code="online_custom_managerment" sort="8" name="system.menuname.onlineCustomService.managerment" desc="在线客服授权" icon="icon-OnlineService" target="mainfrm" plugin="" url="/onlineCustomerService.do?method=showCustomerServiceManagement" />-->
+                <menu code="performancereport_schedule" sort="8" name="system.menuname.performancereport.managerment" desc="协同驾驶舱调度" icon="icon-gongzuoliuguanlipingtai" target="mainfrm" plugin="wfanalysis,behavioranalysis" url="/report.do?method=collectorDashboard" />
+                <menu code="archive_file_static" sort="9" name="system.menuname.performancereport.archive" desc="新闻数据静态化" icon="icon-xitongtiaoshishezhi" target="mainfrm" plugin="" url="/archive.do?method=index" />
+                <menu code="officetrans_aspose_monitor" sort="10" name="system.menuname.seeyonOfficeTrans"
+                      desc="office转换服务维护" icon="icon-hangweijiankong" target="mainfrm"
+                      plugin="officeOnlinePreview" url="/officeTrans.do?method=monitor"/>
+            </submenus>
+        </menu>
+
+        <menu code="" sort="3" name="system.menuname.InformationIntegrationConfig" desc="信息集成配置" icon="icon-xinxijichengpeizhi" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="portal_related_system" sort="1" name="system.menuname.RelatedSystem" desc="关联系统管理" icon="icon-guanlianxitongguanli" target="mainfrm" plugin="" url="/portal/linkSystemController.do?method=linkSystemMain&amp;isAdmin=true" />
+                <menu code="" sort="2" name="system.menuname.portal" desc="交换引擎栏目" icon="icon-jiaohuanyinqinglanmu" target="mainfrm" plugin="dee" url="/deeSectionController.do?method=main" />
+                <menu code="rest_user_management" sort="3" name="usersystem.restuser.manager" desc="REST用户管理" icon="icon-RESTport" target="mainfrm" plugin="" url="/usersystem/restUser.do" />
+                <menu code="third_user_management" sort="4" name="usersystem.thirduser.manager" desc="三方互信访问授权" icon="icon-xitongzhuce" target="mainfrm" plugin="" url="/usersystem/thirdUser.do" />
+                <menu code="numerical_pulse_pass_reset" sort="5" name="biinside.digital.bi.connection" desc="协同驾驶舱连接" icon="icon-Accoun-security" target="mainfrm" plugin="bi-datamanager-platform" url="/biinside.do?method=biDigitalPulseConfig" />
+                <menu code="biinside_pass_reset" sort="6" name="biinside.pass.reset" desc="协同数据分析BI连接设置" icon="icon-Accoun-security" target="mainfrm" plugin="BI-RuntimeV4,BI-Runtime" url="/biinside.do?method=biinsideConfig" />
+                <menu code="cdp_report_cfg" sort="7" name="cdp.bi.report.setting" desc="数据中台BI连接配置" icon="icon-Accoun-security" target="mainfrm" plugin="cdpBi" url="/biinside.do?method=cdpBiinsideConfig" />
+            </submenus>
+        </menu>
+
+        <menu code="system_safety_management" sort="4" name="system.menuname.SafetyManagement" desc="安全管理" icon="icon-safety-management" target="mainfrm" plugin="" url="/safetyManagement.do?method=index">
+            <submenus>
+                <menu code="" sort="1" name="system.menuname.securityProtection" desc="安全保护" icon="icon-anquanjiance" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_oneKeyCheck" sort="1" name="system.menuname.oneKeyHealthExamination" desc="一键体检" icon="" target="mainfrm" plugin="" url="/securityCheck.do?method=check" />
+                        <menu code="protection_log" sort="2" name="system.menuname.protectionLog" desc="防护日志" icon="" target="mainfrm" plugin="" url="/safetyProtection.do?method=index" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="2" name="system.menuname.Authentication" desc="身份认证" icon="icon-CA-verify" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_password_security" sort="1" name="common.pwd.title" desc="密码安全设置" icon="" target="mainfrm" plugin="" url="/manager.do?method=passwordSecuritySetFrame" />
+                        <menu code="mobile_login_manage" sort="2" name="system.menuname.LoginVerificationSettings" desc="登录验证设置" icon="" target="mainfrm" plugin="" url="/mobileLogin.do?method=index" />
+                        <menu code="identificationManage" sort="3" name="menu.identificationManage" desc="身份验证狗配置" icon="" target="mainfrm" plugin="identification" url="/identification.do?method=index" />
+                        <menu code="CAconfiguration" sort="4" name="system.menuname.CAconfiguration" desc="CA配置" icon="" target="mainfrm" plugin="ca" url="/caAccountManagerController.do?method=index" />
+                        <menu code="org_ldap" sort="5" name="system.menuname.DirectoryService" desc="目录服务配置" icon="" target="mainfrm" plugin="ldap" url="/ldap/ldap.do?method=index" />
+                        <menu code="system_safety_management" sort="6" name="system.menuname.LeaveLockConfig" desc="离开锁定设置" icon="" target="mainfrm" plugin="" url="/safetyManagement.do?method=leaveLockSetting" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="3" name="system.menuname.SessionManagement" desc="会话管理" icon="icon-huihuaguanli" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_online_management" sort="1" name="system.menuname.OnlineManagement" desc="在线管理" icon="" target="mainfrm" plugin="" url="/online.do?method=showOnlineUserListForAdmin" />
+                        <menu code="system_safety_management" sort="2" name="system.menuname.SameTimeOnline" desc="同时在线" icon="" target="mainfrm" plugin="" url="/safetyManagement.do?method=onlineindex" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="4" name="system.menuname.CommunicationSecurity" desc="通信安全" icon="icon-tongxinanquan" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_safety_management" sort="1" name="system.menuname.CSRF" desc="CSRF防御管理" icon="" target="mainfrm" plugin="security" url="/safetyManagement.do?method=csrfindex" />
+                        <menu code="system_safety_management" sort="2" name="system.menuname.Mobileloginsettings" desc="移动登录设置" icon="" target="mainfrm" plugin="m3" url="/safetyManagement.do?method=mobileLoginConfigIndex" />
+                        <menu code="system_ipcontrol_management" sort="3" name="system.menuname.IpAccessConfig" desc="启用IP访问控制" icon="" target="mainfrm" plugin="" url="/ipcontrol.do?method=showIpControlSwitch" />
+                        <menu code="system_ipcontrol" sort="4" name="system.menuname.AccessConfig" desc="访问控制设置" icon="" target="mainfrm" plugin="" url="/ipcontrol.do?method=index" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="5" name="system.menuname.Dataprotection" desc="数据保护" icon="icon-verification" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_safety_management" sort="1" name="system.menuname.Statesecretencryption" desc="数据加密" icon="" target="mainfrm" plugin="" url="/apps_res/common/dataEncryption.html" />
+                        <menu code="watermark_settings" sort="3" name="system.menuname.waterMark" desc="水印设置" icon="" target="mainfrm" plugin="" url="/waterMark.do?method=index" />
+                        <menu code="" sort="4" name="system.menuname.shareSetting" desc="分享设置" icon="" target="mainfrm" plugin="" url="/share.do?method=shareSetting" />
+                        <menu code="mobile_screenshot" sort="5" name="system.menuname.screenshot" desc="防截屏设置" icon="" target="mainfrm" plugin="" url="/screenshotController.do?method=index" />
+                        <menu code="system_attachment_security" sort="6" name="system.menuname.uploadsetting" desc="上传附件设置" icon="" target="mainfrm" plugin="" url="/manager.do?method=attachmentSecuritySetFrame" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="6" name="system.menuname.securityaudit" desc="安全审计" icon="icon-anquanshenji" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_safety_management" sort="1" name="system.menuname.AuditManagementSet" desc="审计管理员设置" icon="" target="mainfrm" plugin="" url="/safetyManagement.do?method=auditManagerSet" />
+                        <menu code="system_logonLog" sort="2" name="common.system.login.label" desc="登录日志" icon="icon-denglurizhi" target="mainfrm" plugin="" url="/logonLog.do?method=summaryStat" />
+                        <menu code="system_appLog" sort="3" name="system.menuname.AppLog" desc="应用日志" icon="icon-yingyongrizhi" target="mainfrm" plugin="" url="/appLog.do?method=mainFrame" />
+                        <menu code="" sort="4" name="form.custom.function.security.audit" desc="CAP自定义函数审核" icon="" target="mainfrm" plugin="" url="/common/cap4/common/formCustomFuncList.html" />
+                        <menu code="m3_complaint_manage" sort="5" name="m3.mobile.manager.menu.complaintManage" desc="投诉管理" icon="" target="mainfrm" plugin="" url="/common/m3/m3AdminManage/complaintManage.html" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="7" name="system.menuname.Securitytesting" desc="安全检测" icon="icon-anquanjiance" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="weakpassword" sort="1" name="system.menuname.weakpassword" desc="弱口令检测" icon="" target="mainfrm" plugin="" url="/weakpwd.do?method=pwdCheckMain" />
+                        <menu code="system_monitor" sort="2" name="system.menuname.SQLinjection" desc="SQL注入检测" icon="" target="mainfrm" plugin="" url="/ctp/sysmgr/monitor/hql.do" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="8" name="system.menuname.HttpSecurityManagement" desc="Http安全管理" icon="icon-anquanjiance" target="mainfrm" plugin="" url="">
+                    <submenus>
+                        <menu code="system_safety_management" sort="1" name="system.menuname.HttpSecurityConfig" desc="Http安全配置" icon="" target="mainfrm" plugin="" url="/safetyManagement.do?method=httpSecurityManagerIndex" />
+                    </submenus>
+                </menu>
+                <menu code="org_secretlevel_management" sort="9" name="system.menuname.seretLevelManager" desc="密级管理" icon="icon-gongwenyuansu" target="mainfrm" plugin="level_protection" url="" >
+                    <submenus>
+                        <menu code="org_secretlevel_setting" sort="1" name="system.menuname.secretLevelSetting" desc="密级设置" icon="" target="mainfrm" plugin="level_protection" url="/organization/secretLevel.do?method=setting" />
+                        <menu code="org_secretlevel_audit" sort="2" name="system.menuname.memberSecretLevelAudit" desc="人员定密审核" icon="" target="mainfrm" plugin="level_protection" url="/apps_res/organization/common/secretApprove.html" />
+                    </submenus>
+                </menu>
+<!--                <menu code="org_rolestd_setting" sort="10" name="system.menuname.govRoleStdSetting" desc="三员分离" icon="icon-moban" target="mainfrm" plugin="level_protection" url="/organization/rolestd.do?method=roleStdSetting" />-->
+            </submenus>
+        </menu>
+
+        <menu code="" sort="5" name="system.menuname.MicroConfig" desc="微服务配置" icon="icon-weifuwupeizhi" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="" sort="1" name="menu.system.service.unite.config" desc="统一配置" icon="icon-xitongweihu" target="mainfrm" plugin="distributed" url="/microService.do?method=getPlatformConfig" />
+                <menu code="system_data_trans" sort="3" name="menu.StoreRule.table" desc="数据转储管理" icon="icon-shujuzhuanchuguanli" target="mainfrm" plugin="fk" url="/microService.do?method=getDataTransferCofig" />
+
+           		<menu code="" sort="5" name="menu.indexSearch.config" desc="全文检索设置" icon="icon-search-set" target="mainfrm" plugin="index" url="">
+                    <submenus>
+                        <menu code="index_config_show" sort="1" name="common.base.set.label" desc="基础设置" icon="" target="mainfrm" plugin="index" url="/index/indexController.do?method=showIndexConfig" />
+                        <menu code="index_resume" sort="2" name="indexResume.oper.mainmenu" desc="重建索引设置" icon="" target="mainfrm" plugin="index" url="/index/indexResumeController.do?method=showSettingPage" />
+                        <menu code="index_config_check" sort="3" name="indexResume.config.check" desc="部署配置检查" icon="" target="mainfrm" plugin="index" url="/common/cap4/bizconfig/entral/deploy.html" />
+                    </submenus>
+                </menu>
+
+                <menu code="system-micro-config" sort="6" name="menu.video.service.config" desc="音视频服务配置" icon="icon-wenjianxiazaifuwuqipeizhi" target="mainfrm" plugin="media" url="/microServiceConfig.do?method=mediaServiceIndex" />
+				<menu code="system-micro-config" sort="8" name="menu.system.service.file.setting.title" desc="文件下载配置" icon="icon-wenjianxiazaifuwuqipeizhi" target="mainfrm" plugin="" url="/microServiceConfig.do?method=fileDownConfigIndex" />
+
+            </submenus>
+        </menu>
+
+        <menu code="m3_mobile_title" sort="6" name="m3.mobile.manager.menu.title" desc="M3移动管理平台" icon="icon-M3" target="mainfrm" plugin="m3" url="/m3/mobileManager.do?method=index">
+            <submenus>
+                <menu code="" sort="1" name="m3.mobile.manager.menu.basics" desc="基础设置" icon="icon-jichushezhi" target="mainfrm" plugin="m3" url="">
+                    <submenus>
+                        <menu code="m3_loginSetting" sort="1" name="m3.mobile.manager.menu.loginSetting" desc="登录设置" icon="" target="mainfrm" plugin="m3" url="/m3/m3LoginSettingsController.do?method=index" />
+<!--                        <menu code="m3_isignatureServer" sort="2" name="m3.mobile.manager.menu.isignatureServer" desc="签章服务地址设置" icon="" target="mainfrm" plugin="m3" url="/m3/msignature.do?method=setIsignatureServer&amp;_resourceCode=m3_isignatureServer" />-->
+                        <menu code="m3_app_hotDeployment" sort="3" name="m3.mobile.manager.menu.hotDeployment" desc="H5应用热部署" icon="" target="mainfrm" plugin="m3" url="/cip/appManagerController.do?method=hotDeployment&amp;_resourceCode=m3_hotDeployment" />
+                        <menu code="m3_barcode_server" sort="4" name="m3.mobile.manager.menu.serverBarcodeSetting" desc="服务器二维码设置" icon="" target="mainfrm" plugin="m3" url="/m3/serverBarcodeController.do?method=index" />
+                        <menu code="m3_print_setting" sort="5" name="m3.print.setting.title" desc="无线打印设置" icon="" target="mainfrm" plugin="m3" url="/m3/printController.do?method=goSettings" />
+                        <menu code="m3_location_config" sort="6" name="system.menuname.clientConfig" desc="定位服务设置" icon="" target="mainfrm" plugin="m3" url="/m3/m3ClientConfig.do?method=index" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="2" name="m3.mobile.manager.menu.msgManger" desc="消息管理" icon="icon-xiaoxiguanli" target="mainfrm" plugin="m3" url="">
+                    <submenus>
+                        <menu code="m3_push_config" sort="1" name="m3.mobile.manager.menu.pushConfig" desc="离线消息推送配置" icon="" target="mainfrm" plugin="m3" url="/m3/pnsMsgSettingController.do?method=index&amp;_resourceCode=m3_pushConfig" />
+                        <menu code="m3_push_log" sort="2" name="m3.mobile.manager.menu.pnsLog" desc="消息推送日志" icon="" target="mainfrm" plugin="m3" url="/m3/pnsLogController.do?method=goPushLog" />
+                        <menu code="m3_env_check" sort="3" name="m3.portal.menuName.message.checkEvn" desc="环境检查" icon="" target="mainfrm" plugin="m3" url="/m3/environmentController.do?method=tempView" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="3" name="m3.mobile.manager.menu.safetymanage" desc="安全管理" icon="icon-safety-management" target="mainfrm" plugin="m3" url="">
+                    <submenus>
+                        <menu code="m3_mobile_connectModeSet" sort="1" name="m3.mobile.manager.menu.connectModeSet" desc="移动登录方式" icon="" target="mainfrm" plugin="m3" url="/m3/transModeController.do?method=index&amp;_resourceCode=m3_connectModeSet" />
+                        <menu code="m3_user_logout" sort="2" name="m3.mobile.manager.menu.logoutManage" desc="用户注销管理" icon="" target="mainfrm" plugin="m3" url="/common/m3/m3AdminManage/logoutManage.html" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="4" name="m3.mobile.manager.menu.useractionmanage" desc="用户行为管理" icon="icon-user-action" target="mainfrm" plugin="m3" url="">
+                    <submenus>
+                        <menu code="m3_mobile_monitoring" sort="1" name="m3.mobile.manager.menu.monitoring" desc="系统运行监控" icon="" target="mainfrm" plugin="m3" url="/m3/monitoringController.do?method=index&amp;_resourceCode=m3_monitoring" />
+                    </submenus>
+                </menu>
+                <menu code="" sort="5" name="m3.mobile.manager.menu.versionControl" desc="版本控制" icon="icon-user-action" target="mainfrm" plugin="m3" url="">
+                    <submenus>
+                        <menu code="m3_version_base_info" sort="1" name="m3.mobile.manager.menu.baseInfo" desc="基础信息设置" icon="" target="mainfrm" plugin="m3" url="/common/cap4/template/bizconfig/informationConfig_ie8/index.html" />
+                        <menu code="m3_mobile_monitoring" sort="2" name="m3.mobile.manager.menu.versionUpdate" desc="版本更新" icon="" target="mainfrm" plugin="m3" url="/common/cap4/template/bizconfig/updateVersion_ie8/index.html" />
+                    </submenus>
+                </menu>
+            </submenus>
+        </menu>
+
+        <menu code="zx_basemanagement" sort="7" name="system.menuname.zx.platform" desc="致信管理平台" icon="icon-zhixin" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=index">
+            <submenus>
+                <menu code="zx_management" sort="1" name="system.menuname.zx.management" desc="致信管理" icon="icon-zhixin" target="mainfrm" plugin="zx" url="">
+                    <submenus>
+                        <menu code="zx_basemanagement" sort="1" name="system.menuname.zx.basemanagement" desc="基础信息设置" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=index" />
+                        <menu code="zx_pushSetting" sort="2" name="system.menuname.zx.pushSetting" desc="业务消息推送设置" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=pushSetting" />
+                        <menu code="zx_privateSetting" sort="3" name="system.menuname.zx.privateSetting" desc="私有云设置" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=privateSetting" />
+                        <menu code="zx_compensateTimeSetting" sort="4" name="system.menuname.zx.compensateTimeSetting" desc="消息补偿" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=compensateTimeSetting" />
+                        <menu code="zx_messageReceiveSetting" sort="5" name="system.menuname.zx.messageReceiveSetting" desc="消息接收设置" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=msgSwitch" />
+                        <menu code="zx_fileSetting" sort="6" name="system.menuname.zx.fileSetting" desc="文件服务设置" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=fileSetting" />
+                    </submenus>
+                </menu>
+                <menu code="zx_groupmanagement" sort="2" name="system.menuname.zx.groupmanagement" desc="群组管理" icon="icon-group-management" target="mainfrm" plugin="zx" url="">
+                    <submenus>
+                        <menu code="zx_groupinfomanagement" sort="1" name="system.menuname.zx.groupinfomanagement" desc="群组消息管理" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=displayUcGroupInfoList" />
+                        <menu code="zx_grouplogmanagement" sort="2" name="system.menuname.zx.grouplogmanagement" desc="群组操作日志管理" icon="" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=displayZxGroupLog" />
+                    </submenus>
+                </menu>
+                <menu code="zx_tokenmanagement" sort="3" name="system.menuname.zx.tokenmanagement" desc="人员信息管理" icon="icon-renyuanguanli" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=displayUcTokenList" />
+                <menu code="zx_homeSkinConfig" sort="4" name="system.menuname.zx.homeSkinConfig" desc="登录页自定义" icon="icon-gexinghuapeizhi" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=loginSkinSettingIndex" />
+                <menu code="zx_videoauth" sort="5" name="system.menuname.zx.videoAuth" desc="音视频授权" icon="icon-shipinhuiyitongbu" target="mainfrm" plugin="zx" url="/uc/rong/config.do?method=videoAuth" />
+            </submenus>
+        </menu>
+
+        <menu code="" sort="8" name="system.menuname.vjoinSet" desc="V-Join连接设置" icon="icon-V-Join" target="mainfrm" plugin="vjoin" url="">
+            <submenus>
+                <menu code="vjoin_set" sort="1" name="system.menuname.vjoinSet" desc="V-Join连接设置" icon="icon-V-Join" target="mainfrm" plugin="vjoin" url="/vjoin/sysSeting.do?method=index" />
+            </submenus>
+        </menu>
+
+        <menu code="" sort="9" name="system.menuname.openplatform" desc="致远开放平台" icon="icon-CTP-studio" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="" sort="1" name="system.menuname.authentication" desc="开发者认证" icon="icon-CMPyidongpingtai" target="newWindow" plugin="ctpstudio" url="http://open.seeyon.com" />
+                <menu code="customization_development" sort="2" name="system.menuname.CustomizedService" desc="客户化开发" icon="icon-CIPjichengpingtai" target="mainfrm" plugin="ctpstudio" url="/usersystem/customization.do?method=index" />
+                <menu code="" sort="3" name="system.menuname.openplatform.cmp" desc="CMP移动平台" icon="icon-CMPyidongpingtai" target="newWindow" plugin="" url="http://open.seeyon.com/seeyon/appOpenPlatform.html" />
+                <menu code="" sort="4" name="system.menuname.openplatform.ctp" desc="CTP技术平台" icon="icon-CTPjishupingtai" target="newWindow" plugin="" url="http://open.seeyon.com/seeyon/technologyPlatform.html" />
+                <menu code="" sort="5" name="system.menuname.openplatform.cip" desc="CIP集成平台" icon="icon-CIPjichengpingtai" target="newWindow" plugin="" url="http://open.seeyon.com/seeyon/developmentPlatform.html" />
+            </submenus>
+        </menu>
+
+        <menu code="" sort="10" name="system.menuname.mplus" desc="云联中心" icon="icon-yunlianzhongxinlogo" target="mainfrm" plugin="mplus" url="">
+            <submenus>
+                <menu code="mall_mplus_operate" sort="1" name="common.base.set.label" desc="基础设置" icon="icon-jichushezhi" target="mainfrm" plugin="mplus" url="/appsMall/mPlus.do?method=index" />
+                <menu code="" sort="2" name="system.menuname.mplus.service" desc="服务应用" icon="icon-Ufuwushezhi" target="mainfrm" plugin="mplus" url="">
+                    <submenus>
+                        <menu code="mplus_setting" sort="1" name="common.vidoe.meeting.label" desc="视频会议" icon="" target="mainfrm" plugin="mplus" url="/mplus/mplusvideo.do?method=video" />
+                    </submenus>
+                </menu>
+                <menu code="mplus_setting" sort="3" name="mplus.menu.cloudSync" desc="云端同步" icon="icon-Utongbucaozuo" target="mainfrm" plugin="mplus" url="/mplus/telsync.do?method=index" />
+            </submenus>
+        </menu>
+		<menu code="" sort="11" name="formtalk.integrated.platform" desc="内外协同平台" icon="icon-formtalk" target="mainfrm" plugin="formtalk" url="">
+            <submenus>
+                <menu code="formtalk_base" sort="1" name="common.base.set.label" desc="基础设置" icon="icon-jichushezhi" target="mainfrm" plugin="formtalk" url="/formtalk/sysconfig.do?method=index" />
+            </submenus>
+        </menu>
+        <menu code="" sort="12" name="system.menuname.SystemLog" desc="系统日志" icon="icon-xitongrizhi" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="system_logonLog" sort="1" name="common.system.login.label" desc="登录日志" icon="icon-denglurizhi" target="mainfrm" plugin="" url="/logonLog.do?method=summaryStat" />
+                <menu code="system_appLog" sort="2" name="system.menuname.AppLog" desc="应用日志" icon="icon-yingyongrizhi" target="mainfrm" plugin="" url="/appLog.do?method=mainFrame" />
+            </submenus>
+        </menu>
+        <!-- 智能公文-->
+        <menu code="" sort="13" name="system.menuname.aiedoc" desc="智能公文" icon="icon-AI-helper" target="mainfrm" plugin="" url="">
+            <submenus>
+                <menu code="aiedoc_ocr" sort="1" name="system.menuname.aiedococr" desc="OCR识别" icon="icon-OCRshibie" target="mainfrm" plugin="aiedococr" url="/aiedoc/ocr.do?method=config" />
+                <menu code="aiedoc_correct" sort="2" name="system.menuname.aiedoccorrect" desc="智能纠错" icon="icon-aiedoccorrect" target="mainfrm" plugin="aiedoccorrect" url="/aiedoc/correct.do?method=config" />
+                <menu code="aiedoc_sensitiveWord" sort="3" name="system.menuname.aiedocSensitiveWord" desc="敏感词检查" icon="icon-mingancijiancha" target="mainfrm" plugin="aiedocSensitiveWord" url="/aiedoc/sensitive.do?method=config" />
+                <menu code="xiaoz_aiapp_ocr_verify" sort="4" name="ocr.menu.invoice.verify" desc="智能报销" icon="icon-yingyongguanli" target="mainfrm" plugin="aiOCR" url="/ocr/invoiceController.do?method=invoiceVerifyManage" />
+                <menu code="aiedoc_assist" sort="5" name="system.menuname.assist.decision" desc="智能辅助决策" icon="icon-fuzhujuece" target="mainfrm" plugin="aiedocAssist" url="/aiedoc/assist/approval.do?method=config" />
+                <menu code="aiedoc_typeSetting" sort="6" name="system.menuname.aiedocTypeSetting" desc="智能排版" icon="icon-OCRshibie" target="mainfrm" plugin="aiedocTypeSetting" url="/aiedoc/typeSetting/config.do?method=config" />
+                <menu code="aiedoc_ecs" sort="7" name="system.menuname.aiedoc.esc" desc="智能文事会" icon="icon-fuzhujuece" target="mainfrm" plugin="smartECS" url="/aiedoc/smartECS.do?method=config" />
+                <menu code="ai_contract_service" sort="7" name="system.menuname.aiContractService" desc="智能合同服务管理" icon="icon-fuzhujuece" target="mainfrm" plugin="" url="/app/bap/contract/serviceInfo.html" />
+            </submenus>
+        </menu>
+        <menu code="" sort="14" name="system.menuname.edocLibsResource.gwkManager" desc="公文库设置" icon="icon-gongwenguanli" target="mainfrm" plugin="electronicDocumentRepositoryPlugin" url="">
+            <submenus>
+                <menu code="gwk_connect" sort="1" name="system.menuname.edocLibsResource.connectConfig" desc="连接配置" icon="icon-OCRshibie" target="mainfrm" plugin="electronicDocumentRepositoryPlugin" url="/gwk/gwkController.do?method=connectConfig" />
+                <menu code="gwk_sync_org" sort="3" name="system.menuname.edocLibsResource.syncOrgConfig" desc="组织数据同步" icon="icon-aiedoccorrect" target="mainfrm" plugin="electronicDocumentRepositoryPlugin" url="/gwk/gwkController.do?method=syncOrg" />
+            </submenus>
+        </menu>
+        <menu code="page_design_center" sort="22" name="CoMi" desc="CoMi" icon="icon-comi_builder" target="mainfrm" plugin="comibuilder,Comi_Standard_Edition,Comi_Enterprise_Edition" url="">
+            <submenus>
+                <menu code="comi_builder_admin" sort="1" name="CoMi Builder" desc="CoMi Builder" icon="icon-comi_builder" target="mainfrm" plugin="comibuilder,Comi_Standard_Edition,Comi_Enterprise_Edition" url="/ai/comi/builder.do?method=adminIndex" />
+            </submenus>
+        </menu>
+    </menus>
+    <!--虚拟code-->
+    <virtualCode>
+        <code>system_back_admin</code>
+        <code>performancereport-setting</code>
+    </virtualCode>
+</SystemAdmin>
